@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@200&family=Hind+Siliguri&family=Roboto+Condensed&family=Syne:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Syne', sans-serif;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.app {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.363);
+    justify-content: center;
+    color: rgba(0, 0, 1, 255);
+}
+
+.app::before {
+    content: '';
+    background: url('./background.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: 50rem 50rem;
+}
+
+.container {
+    max-width: -1rem;
+    height: 30rem;
+    margin: auto;
+    padding: 0;
+    top: 4rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.app .header {
+    position: relative;
+    font-size: 200%;
+    margin: 1rem auto;
+    justify-content: center;
+    color: antiquewhite;
+}
+
+.app .footer {
+    position: relative;
+    top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 50%;
+    margin: 1rem auto;
+    border: 1px solid blue;
+    border-color: rgb(0, 17, 255);
+    border-style: none;
+    background-color: rgba(211, 222, 236, 0.26);
+    border-radius: 20px;
+}
+
+.app .container .header .temp1 h1 {
+    font-size: 400%;
+}
+
+input {
+    border-radius: 30px;
+    width: 40%;
+    margin: 2rem auto;
+    margin-top: 1rem;
+    height: 40px;
+    border-color: black;
+    font-style: normal;
+    font-size: 100%;
+    font-variant: small-caps;
+}
